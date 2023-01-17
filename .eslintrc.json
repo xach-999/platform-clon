@@ -1,0 +1,30 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["react-app"],
+  "rules": {
+    "object-curly-spacing": ["error", "never"],
+    "array-bracket-spacing": ["error", "never"],
+    "template-curly-spacing": ["error", "never"],
+    "react/jsx-curly-spacing": [2, {
+      "when": "never",
+      "children": true,
+      "allowMultiline": true
+    }],
+    "comma-dangle": ["error", "never"],
+    "quotes": ["error", "double"],
+    "semi": "off",
+    "@typescript-eslint/semi": ["error", "never"],
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "none",
+        "requireLast": false
+      },
+      "singleline": {
+        "delimiter": "comma",
+        "requireLast": false
+      }
+    }],
+    "react-hooks/exhaustive-deps": "off"
+  }
+}
